@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="12" passed="12">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="43268" started-at="2017-06-07T18:58:36Z" finished-at="2017-06-07T18:59:20Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="43268" started-at="2017-06-07T18:58:36Z" finished-at="2017-06-07T18:59:20Z">
+      <class name="runner.ExecuteTestCases">
+        <test-method status="PASS" signature="execute(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:runner.ExecuteTestCases@4c39bec8]" name="execute" duration-ms="31248" started-at="2017-06-07T13:58:37Z" data-provider="hybridData" finished-at="2017-06-07T13:59:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[open_browser]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[url]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- execute -->
+        <test-method status="PASS" signature="execute(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:runner.ExecuteTestCases@4c39bec8]" name="execute" duration-ms="875" started-at="2017-06-07T13:59:08Z" data-provider="hybridData" finished-at="2017-06-07T13:59:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[enter_text]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[firstname]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[id]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Test]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- execute -->
+        <test-method status="PASS" signature="execute(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:runner.ExecuteTestCases@4c39bec8]" name="execute" duration-ms="179" started-at="2017-06-07T13:59:09Z" data-provider="hybridData" finished-at="2017-06-07T13:59:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[enter_text]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[lastname]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[id]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Test]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- execute -->
+        <test-method status="PASS" signature="execute(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:runner.ExecuteTestCases@4c39bec8]" name="execute" duration-ms="449" started-at="2017-06-07T13:59:09Z" data-provider="hybridData" finished-at="2017-06-07T13:59:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[enter_text]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[email]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[id]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[test@testing123.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- execute -->
+        <test-method status="PASS" signature="execute(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:runner.ExecuteTestCases@4c39bec8]" name="execute" duration-ms="458" started-at="2017-06-07T13:59:09Z" data-provider="hybridData" finished-at="2017-06-07T13:59:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[enter_text]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[re-enter_email]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[id]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[test@testing123.co]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- execute -->
+        <test-method status="PASS" signature="execute(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:runner.ExecuteTestCases@4c39bec8]" name="execute" duration-ms="251" started-at="2017-06-07T13:59:10Z" data-provider="hybridData" finished-at="2017-06-07T13:59:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[enter_text]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[password]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[id]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[NewUser@123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- execute -->
+        <test-method status="PASS" signature="execute(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:runner.ExecuteTestCases@4c39bec8]" name="execute" duration-ms="554" started-at="2017-06-07T13:59:10Z" data-provider="hybridData" finished-at="2017-06-07T13:59:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[select]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[month]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[id]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Feb]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- execute -->
+        <test-method status="PASS" signature="execute(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:runner.ExecuteTestCases@4c39bec8]" name="execute" duration-ms="232" started-at="2017-06-07T13:59:11Z" data-provider="hybridData" finished-at="2017-06-07T13:59:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[select]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[day]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[id]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[19]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- execute -->
+        <test-method status="PASS" signature="execute(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:runner.ExecuteTestCases@4c39bec8]" name="execute" duration-ms="235" started-at="2017-06-07T13:59:11Z" data-provider="hybridData" finished-at="2017-06-07T13:59:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[select]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[year]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[id]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[2000]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- execute -->
+        <test-method status="PASS" signature="execute(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:runner.ExecuteTestCases@4c39bec8]" name="execute" duration-ms="168" started-at="2017-06-07T13:59:11Z" data-provider="hybridData" finished-at="2017-06-07T13:59:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[click]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[gender]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[id]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[null]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- execute -->
+        <test-method status="PASS" signature="execute(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:runner.ExecuteTestCases@4c39bec8]" name="execute" duration-ms="261" started-at="2017-06-07T13:59:11Z" data-provider="hybridData" finished-at="2017-06-07T13:59:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[click]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[create_account]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[id]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[null]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- execute -->
+        <test-method status="PASS" signature="execute(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:runner.ExecuteTestCases@4c39bec8]" name="execute" duration-ms="8282" started-at="2017-06-07T13:59:11Z" data-provider="hybridData" finished-at="2017-06-07T13:59:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[close_browser]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[null]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[null]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- execute -->
+      </class> <!-- runner.ExecuteTestCases -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
