@@ -1,4 +1,4 @@
-package com.featureOne.test;
+package com.feature.test;
 
 import org.testng.annotations.Test;
 
