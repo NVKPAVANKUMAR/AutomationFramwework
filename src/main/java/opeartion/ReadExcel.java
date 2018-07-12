@@ -14,11 +14,11 @@ import org.testng.annotations.DataProvider;
 public class ReadExcel {
     // declaring static fields which will not change.
     String path = System.getProperty("user.dir") + "\\src\\main\\resources\\object\\Facebook_Keyword.xlsx";
-    static XSSFWorkbook workbook = null;
-    static XSSFSheet sheet = null;
-    static XSSFRow row = null;
-    static XSSFCell cell = null;
-    static FileInputStream fis = null;
+    private static XSSFWorkbook workbook = null;
+    private static XSSFSheet sheet = null;
+    private static XSSFRow row = null;
+    private static XSSFCell cell = null;
+    private static FileInputStream fis = null;
 
     // initializing workbook and loading the excel file from path.
     public ReadExcel() {
@@ -41,7 +41,7 @@ public class ReadExcel {
             int rows = sheet.getLastRowNum(); // total rows.
             int cells = row.getLastCellNum(); // total columns.
             data = new Object[rows - 1][cells - 1]; // defining size of array. As array index is 0 based, so -1.
-            String cell_value = "";
+            String cell_value;
 
             for (int i = 2; i <= rows; i++) // i = 2 because of first value is in row 2 --> open_browser
             {
@@ -55,7 +55,6 @@ public class ReadExcel {
                     } else {
                         cell_value = cell.getStringCellValue();
                     }
-
                     System.out.println(cell_value);
                     data[i - 2][j - 1] = cell_value; // i - 2 and j - 1 because we have to start from data[0][0]
                 }

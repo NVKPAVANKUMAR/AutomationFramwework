@@ -8,7 +8,6 @@ import org.openqa.selenium.WebDriver;
 import java.io.File;
 import java.io.IOException;
 
-
 public class ScreenshotUtility {
 
     public static void takeScreenshot(WebDriver driver, String scrName) throws IOException {

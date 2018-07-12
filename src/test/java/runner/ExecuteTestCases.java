@@ -36,7 +36,6 @@ public class ExecuteTestCases extends BrowserInstance {
         ui_operation = new UIOperation(driver);
         try {
             ui_operation.perform(property, operation, objectName, objectType, value,logger);
-            takeScreenshot(driver, "SignUp");
             logger.pass("SignUp Success");
 
         } catch (Exception e) {

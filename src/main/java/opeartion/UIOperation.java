@@ -6,22 +6,21 @@ import com.aventstack.extentreports.ExtentTest;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
-import utilities.ConfigParser;
 
 import static driver.BrowserInstance.initiateDriver;
 import static driver.BrowserInstance.openUrl;
+import static utilities.ScreenshotUtility.takeScreenshot;
 
 public class UIOperation {
 
-    WebDriver driver;
+    private WebDriver driver;
+
     public UIOperation(WebDriver driver) {
         this.driver = driver;
     }
 
-    public void perform(Properties p,String operation,String objectName,String objectType,String value,ExtentTest logger) throws Exception{
-        System.out.println("");
+    public void perform(Properties p, String operation, String objectName, String objectType, String value, ExtentTest logger) {
         try {
             switch (operation) {
                 case "click":
@@ -35,7 +34,6 @@ public class UIOperation {
                     logger.info(objectName + " text entered");
                     break;
                 case "open_browser": // can have more conditions if a specific browser has to be selected.
-                    String path = System.getProperty("user.dir");
                     if (objectName.equals("chrome")) {
                         initiateDriver(objectName);
                     }
@@ -60,13 +58,15 @@ public class UIOperation {
                     break;
 
                 case "close_browser":
+                    takeScreenshot(driver, "SignUp");
                     driver.quit();
                     logger.info("Browser closed successfully");
                     break;
+
                 default:
                     break;
             }
-        }catch (Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
         }
     }
