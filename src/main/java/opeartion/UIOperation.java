@@ -34,13 +34,10 @@ public class UIOperation {
                     logger.info(objectName + " text entered");
                     break;
                 case "open_browser": // can have more conditions if a specific browser has to be selected.
-                    if (objectName.equals("chrome")) {
-                        initiateDriver(objectName);
-                    }
+                    initiateDriver(objectName);
                     System.out.println(p.getProperty(value));
                     openUrl(p.getProperty(value));
                     logger.info(objectName + " url opened");
-
                     break;
 
                 case "get_text":
@@ -54,7 +51,6 @@ public class UIOperation {
                     Select select = new Select(element);
                     select.selectByVisibleText(value);
                     logger.info(objectName + " selected successfully");
-
                     break;
 
                 case "close_browser":
@@ -82,7 +78,7 @@ public class UIOperation {
             return By.className(p.getProperty(objectName));
         }
         //find by id
-        else if (objectType.equalsIgnoreCase("id")) {
+        else if (objectType.equalsIgnoreCase("ID")) {
             return By.id(p.getProperty(objectName));
         }
         //find by name

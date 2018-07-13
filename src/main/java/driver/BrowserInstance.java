@@ -32,7 +32,7 @@ public class BrowserInstance {
             service.start();
             option = new ChromeOptions();
             option.addArguments("--incognito");
-            driver = new RemoteWebDriver(service.getUrl(),option);
+            driver = new RemoteWebDriver(service.getUrl(), option);
         } else if (browserName.equalsIgnoreCase("firefox")) {
             System.setProperty("webdriver.gecko.driver", "DriverJars/geckodriver.exe");
             driver = new FirefoxDriver();

@@ -9,7 +9,6 @@ import java.io.File;
 import java.io.IOException;
 
 public class ScreenshotUtility {
-
     public static void takeScreenshot(WebDriver driver, String scrName) throws IOException {
         String destFilePath = "target/screenshot-" + scrName + ".png";
         File src = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);

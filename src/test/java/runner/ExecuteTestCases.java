@@ -4,9 +4,7 @@ import java.io.IOException;
 import java.util.Properties;
 
 import driver.BrowserInstance;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.PageFactory;
+
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
@@ -15,7 +13,6 @@ import opeartion.ReadObject;
 import opeartion.UIOperation;
 
 import static utilities.ReportGenerator.*;
-import static utilities.ScreenshotUtility.takeScreenshot;
 
 public class ExecuteTestCases extends BrowserInstance {
 
@@ -28,6 +25,7 @@ public class ExecuteTestCases extends BrowserInstance {
     public void setUp() throws IOException {
         startReport();
     }
+
     @Test(dataProvider = "hybridData", dataProviderClass = ReadExcel.class)
     public void execute(String operation, String objectName, String objectType, String value) {
         startTest(new Object() {
@@ -35,13 +33,14 @@ public class ExecuteTestCases extends BrowserInstance {
         property = read.getObjectRepository(); // getting property to read from objects.property
         ui_operation = new UIOperation(driver);
         try {
-            ui_operation.perform(property, operation, objectName, objectType, value,logger);
+            ui_operation.perform(property, operation, objectName, objectType, value, logger);
             logger.pass("SignUp Success");
 
         } catch (Exception e) {
             e.printStackTrace();
         }
     }
+
     @AfterClass
     public void tearDown() {
         endReport();
